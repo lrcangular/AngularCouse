@@ -2,7 +2,7 @@
 <ul class="list-group">
   <li *ngFor="
     let character of characterList;
-    let i = index;
+
     let isFirst = first;
     let isLast = last;
     let isEven = even;
@@ -15,13 +15,12 @@
     }">
 
     <div>
-      <span class="text-primary"> {{i+1}}. </span>
       <span> {{character.name}} - </span>
       <strong>Power:</strong>
       <span> {{character.power}}</span>
     </div>
 
-    <button (click)="onDeleteCharacter(i)" class="btn btn-danger" >x</button>
+    <button (click)="onDeleteCharacter(character.id)" class="btn btn-danger" >x</button>
 
   </li>
 </ul>
