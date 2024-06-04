@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Character } from '../interfaces/character.interface';
+import { first } from 'rxjs';
 
 @Component({
   selector: 'app-dbz-main-page',
@@ -15,7 +16,16 @@ public characters: Character[] = [{
 },{
   name: 'Goku',
   power: 2000
+},{
+  name: 'Vegeta',
+  power: 7500
 }];
 
+onNewCharacter(character: Character):void {
+  this.characters.push(character)
+}
 
+onDeleteCharacter(index:number){
+  this.characters.splice(index,1);
+}
 }
