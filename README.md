@@ -3,7 +3,10 @@
 
 Sección 6: empezar 04/06/2024
 
+# Utilidades
 
+server para desplegar prueba: https://www.npmjs.com/package/http-server
+                              https://app.netlify.com/
 
 # 02Bases
 
